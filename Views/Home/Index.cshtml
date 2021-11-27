@@ -1,0 +1,21 @@
+﻿@model List<MVCAdoConnection.ViewModels.clsFamilyMember>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div>
+    <table class="table-responsive">
+        <tr>
+            <th>Meber Id</th>
+            <th>Meber Name</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th>@item.memberid</th>
+                <th>@item.membername</th>
+            </tr>
+        }
+
+    </table>
+</div>
